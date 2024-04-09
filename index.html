@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable Text Field</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/diary.css">
+    <link rel="stylesheet" href="css/slider.css">
+</head>
+<body>
+    <div id="dimmer"></div>
+
+    <div id="video-player" class="video-player">
+        <div class="slider-container">
+            <div class="slider-img-container">
+                <img id="indicator-1" class="slider-img" src="assets/feedback.png" alt="">
+                <img id="indicator-2" class="slider-img" src="assets/feedback.png" alt="">
+                <img id="indicator-3" class="slider-img" src="assets/feedback.png" alt="">
+            </div>
+            <span class="time-indicator" id="timeIndicator">0:00</span>
+            <input type="range" min="0" max="100" value="0" class="slider" id="mySlider">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+    </div>
+
+
+    <div id="drag-demo" class="container">
+
+        <div id="draggable-element">
+            <div id="feedback-1" class="feedback">
+                <div class="user-info"><img src="assets/user.png" alt=""></div>
+                <div id="feedback-content" class="content">
+                    This is a feedback container. It contains feedback from a student, teacher or expert. Formatting options include typical text features such as 
+                    bulletpoints and Bold text, and Italic Text
+                </div>
+                <div class="action-tag create-note"><img src="assets/note.png" alt=""></div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="diary-container" id="diary-container">
+        <!-- Menu content goes here -->
+        <div class="diary">
+            <h1>Your Diary</h1>
+            <div class="diary-content">
+                <div id="cat1" class="diary-tag" >Conversational Skills</div>
+                <div id="cat2" class="diary-tag" >Guidelines</div>
+                <div id="cat3" class="diary-tag" >Tips and Tricks</div>
+                <div id="cat4" class="diary-tag" >Formality</div>
+                <div id="cancel" class="diary-tag cancel" >Cancel</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="notification" class="note-saved">"Conversational Skills" Note has successfully been saved</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+    <script src="js/dragging.js"></script>
+    <script src="js/diary.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>

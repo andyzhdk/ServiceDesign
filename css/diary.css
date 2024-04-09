@@ -1,0 +1,66 @@
+/* Add your CSS styles here */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.diary-container {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.diary {
+    width: 30vw;
+    height: auto;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.diary-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px 70px 0px 70px;
+}
+
+.diary button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.menu button:hover {
+    background-color: #0056b3;
+}
+
+
+.diary-tag {
+    background-color: #7c7c7c;
+    border-radius: 20px;
+    padding: 20px 20px 20px 20px;
+    font-size: 24px;
+    color: white;
+    transition: all 0.2s;
+    width: auto;
+    text-align: center;
+    margin: 20px;
+}
+
+
+
+.cancel {
+    background-color: rgb(204, 69, 91);
+}
